@@ -83,7 +83,7 @@ h1,
 }
 
 .navbar ul a:hover {
-    color: #f0690f;
+    /* color: #f0690f; */
     transform: translateY(-2px);
 }
 
