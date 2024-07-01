@@ -1,0 +1,144 @@
+/* home.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styles */
+  .container {
+    padding: 2em;
+  }
+  
+  .container h1 {
+    color: rgb(21, 85, 2);
+    font-size: 3em;
+  }
+  
+  /* Card container styles */
+  .card-container {
+    padding: 3em 0;
+    background-image: url('../assets/pexels-karolina-grabowska-4202926.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+  }
+  
+  .card-container h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .card-container h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  
+  /* Image styles */
+  .image-field {
+    padding: 1em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2em; */
+  }
+  
+  .image-field img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 0;
+  }
+  
+  /* Features section styles */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(247, 244, 244);
+    border-radius: 1em;
+    margin: 0 3em;
+    opacity: 0; /* Initial opacity for fade-in animation */
+    transform: translateY(20px); /* Initial position for translateY animation */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    padding: 0em 1em;
+  }
+  .features-container h2{
+    margin-bottom: 0;
+  }
+  .animate-fadeInLeft {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-fadeInUp {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .features{
+    display: flex;
+  }
+  /* Section styles */
+  .first-section,
+  .second-section,
+  .third-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 2em 0;
+    padding: 2em;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 900px) {
+    .features
+     {
+      flex-direction: column;
+    }
+    .features-container{
+        display: inline;
+        text-align: center;
+    }
+    .card-container {
+      padding: 2em;
+    }
+    .image-field img{
+        max-width: 60%;
+    }
+    .image-field img:hover{
+        max-width: 65%;
+    }
+  }
+  @media (max-width:680px){
+    .image-field img{
+        max-width: 100%;
+    }
+    .image-field img:hover{
+        max-width: 100%;
+    }
+  }
+  

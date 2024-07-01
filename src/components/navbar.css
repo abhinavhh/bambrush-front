@@ -1,0 +1,102 @@
+/* Base styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 7%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 125px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logos {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+h1,
+.capB {
+    margin-top: 1.3em;
+    color: rgb(21, 85, 2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-container {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 2em;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(12, 209, 55);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar ul a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar ul a:hover {
+    color: #f0690f;
+    transform: translateY(-2px);
+}
+
+/* Media query for screens less than 800px */
+@media (max-width: 800px) {
+    .logos {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+}
+@media (max-width:680px){
+    .navbar{
+        flex-direction: column;
+    }
+}

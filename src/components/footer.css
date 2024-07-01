@@ -1,0 +1,80 @@
+/* Footer container */
+footer {
+    background-color: rgb(21, 85, 2);
+    color: white;
+    padding: 2em 0;
+}
+
+/* Footer sections */
+.footer-section {
+    padding: 1em;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons a img {
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    /* Adjust size as needed */
+    margin-right: 5px;
+    border-radius: 50%;
+    /* Makes the image circular */
+}
+
+.social-icons a i {
+    font-size: 1.2em;
+}
+
+/* Terms and policies section */
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    background-color: rgb(12, 209, 55);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em;
+    color: white;
+}
